@@ -1,0 +1,23 @@
+.legend { display: flex; gap: 12px; font-size: .85rem; color: var(--muted); flex-wrap: wrap; }
+.legend span { display: flex; align-items: center; gap: 5px; }
+.legend i, .row i { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+.grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+.dow { text-align: center; font-weight: 700; font-size: .85rem; color: var(--muted); padding: 4px 0; }
+.cell { min-height: 82px; border-radius: 10px; background: #f6fbf6; padding: 4px; display: flex; flex-direction: column; gap: 3px; overflow: hidden; }
+.empty { background: transparent; }
+.cell > span { font-size: .8rem; color: var(--muted); padding-left: 3px; }
+.today { background: var(--green); color: #fff !important; border-radius: 999px; width: 22px; text-align: center; display: inline-block; }
+.ev { border: 0; color: #fff; font-size: .7rem; border-radius: 6px; padding: 2px 5px; text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.row { display: flex; align-items: center; gap: 10px; width: 100%; background: none; border: 0; border-bottom: 1px solid #eef5ee; padding: 10px 0; text-align: left; }
+.row time { margin-left: auto; color: var(--muted); font-size: .9rem; }
+.modalBg { position: fixed; inset: 0; background: rgba(10,25,12,.5); display: flex; align-items: center; justify-content: center; padding: 16px; z-index: 50; }
+.modal { width: min(400px, 100%); }
+.tag { color: #fff; font-size: .75rem; padding: 3px 10px; border-radius: 999px; font-weight: 700; }
+@media (max-width: 640px) { .cell { min-height: 60px; } .ev { font-size: .6rem; padding: 1px 3px; } }
+.dd { font-style: normal; background: var(--green-pale); color: var(--green); font-size: .75rem; font-weight: 700; padding: 2px 8px; border-radius: 999px; }
+.count { margin-top: 10px; color: var(--muted); font-size: .9rem; }
+.rsvp { display: flex; gap: 8px; margin-top: 8px; }
+.rsvp button { flex: 1; padding: 10px; border-radius: 12px; border: 1px solid #cfe3d0; background: #fff; font-weight: 700; color: var(--muted); }
+.rsvp button.yes { background: var(--green); color: #fff; border-color: var(--green); }
+.rsvp button.no { background: #d84315; color: #fff; border-color: #d84315; }

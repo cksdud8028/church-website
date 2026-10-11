@@ -1,0 +1,33 @@
+.hero { background: linear-gradient(135deg, #2e7d32 0%, #66bb6a 60%, #81d4fa 130%); color: #fff; }
+.hero :global(.container) { padding-top: 56px; padding-bottom: 56px; }
+.eyebrow { letter-spacing: .25em; font-size: .8rem; opacity: .85; }
+.title { font-size: 2.2rem; margin: 6px 0 10px; }
+.verse { opacity: .95; max-width: 520px; }
+.heroBtns { display: flex; gap: 10px; margin-top: 24px; flex-wrap: wrap; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 8px; }
+.worship, .notices { list-style: none; }
+.worship li { display: flex; flex-direction: column; padding: 10px 0; border-bottom: 1px dashed #dcecdc; }
+.worship li:last-child { border: 0; }
+.worship span { color: var(--muted); font-size: .92rem; }
+.notices li { padding: 10px 0; border-bottom: 1px solid #eef5ee; }
+.notices summary { display: flex; justify-content: space-between; gap: 12px; cursor: pointer; list-style: none; }
+.notices summary::-webkit-details-marker { display: none; }
+.notices summary:hover { color: var(--green); }
+.body { white-space: pre-line; background: var(--green-pale); border-radius: 12px; padding: 14px 16px; margin-top: 10px; font-size: .95rem; }
+.notices li:last-child { border: 0; }
+.notices time { color: var(--muted); font-size: .85rem; white-space: nowrap; }
+.pin { font-style: normal; background: var(--green-pale); color: var(--green); font-size: .75rem; padding: 2px 8px; border-radius: 999px; margin-right: 8px; font-weight: 700; }
+.galleryBanner { display: flex; justify-content: space-between; align-items: center; margin-top: 20px; padding: 22px 24px; border-radius: var(--radius); background: var(--green-pale); color: var(--green); font-weight: 600; transition: background .15s; }
+.galleryBanner:hover { background: #d3ecd5; }
+@media (max-width: 640px) { .grid { grid-template-columns: 1fr; } .title { font-size: 1.8rem; } }
+.noticeHead { display: flex; justify-content: space-between; align-items: baseline; }
+.noticeHead a { color: var(--muted); font-size: .9rem; }
+.noticeHead a:hover { color: var(--green); }
+.new { font-style: normal; background: #e53935; color: #fff; font-size: .68rem; padding: 2px 7px; border-radius: 999px; margin-right: 8px; font-weight: 700; }
+.lock { text-align: center; padding: 28px 20px; background: var(--green-pale); }
+.lock p { color: var(--muted); margin: 6px 0 16px; }
+.cards { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; }
+.dday { font-size: 2.2rem; font-weight: 800; color: var(--green); line-height: 1.1; }
+.sub { color: var(--muted); font-size: .9rem; }
+.bday li { list-style: none; display: flex; justify-content: space-between; padding: 6px 0; }
+@media (max-width: 640px) { .cards { grid-template-columns: 1fr; } }

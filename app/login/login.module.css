@@ -1,0 +1,8 @@
+.form { max-width: 380px; margin: 40px auto; display: flex; flex-direction: column; gap: 12px; }
+.form input { padding: 12px 14px; border: 1px solid #cfe3d0; border-radius: 12px; font: inherit; }
+.form input:focus { outline: 2px solid var(--green-light); border-color: transparent; }
+.sub { color: var(--muted); font-size: .9rem; }
+.switch { background: none; border: 0; color: var(--green); text-decoration: underline; }
+.err { color: #d84315; font-size: .9rem; }
+.demo { background: var(--green-pale); border-radius: 12px; padding: 12px 14px; font-size: .85rem; display: flex; flex-direction: column; color: var(--muted); }
+.demo strong { color: var(--green); }

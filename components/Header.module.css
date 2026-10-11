@@ -1,0 +1,8 @@
+.header { background: #fff; border-bottom: 1px solid #dcecdc; position: sticky; top: 0; z-index: 10; }
+.inner { max-width: 960px; margin: 0 auto; padding: 12px 16px; display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; }
+.logo { font-weight: 800; color: var(--green); font-size: 1.1rem; }
+.nav { display: flex; gap: 4px; align-items: center; }
+.nav a { padding: 6px 14px; border-radius: 999px; color: var(--muted); font-weight: 600; }
+.nav a:hover { background: var(--green-pale); }
+.nav a.active { background: var(--green-pale); color: var(--green); }
+.nav a.login { background: var(--green); color: #fff; margin-left: 6px; }
